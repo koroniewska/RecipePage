@@ -11,56 +11,58 @@ body {
 
 .container {
     padding: 40px;
-    width: 70%;
+    max-width: 70%;
     background-color: white;
     border-radius: 20px;
 }
 
-.container img:nth-child(1) {
+.mainImg {
     border-radius: 10px;
     width: 100%;
 }
 
-.preparation {
-    padding: 6px 20px 8px;
-    background-color: hsl(330, 100%, 98%);
-    font-family: "Outfit";
-    border-radius: 10px;
-}
-
-h1 {
-    font-family: "Young Serif";
-    color: hsl(24, 5%, 18%);
-    font-weight: 200;
-}
-
-h2 {
-    font-family: "Young Serif";
-    color: hsl(14, 45%, 36%);
-    font-weight: 200;
-}
-
-h3 {
-    color: hsl(332, 51%, 32%);
-    font-weight: 200;
-}
-
-li {
+.defaultUl li {
     padding: 10px 0 0 10px;
 }
 
-li:first-child {
-    padding-top: 0;
+.defaultUl.pink li::marker {
+    color: hsl(332, 51%, 32%);
 }
 
-.prepTime li::marker {
-    color: hsl(332, 51%, 32%);
+.defaultOl li {
+    padding: 10px 0 0 10px;
 }
 
 ::marker {
     color: hsl(14, 45%, 36%);
     font-weight: normal;
     font-size: small;
+}
+
+li:first-child {
+    padding-top: 0;
+}
+
+.preparationBox {
+    padding: 6px 20px 8px;
+    background-color: hsl(330, 100%, 98%);
+    font-family: "Outfit";
+    border-radius: 10px;
+}
+
+.defaultHeadline {
+    font-family: "Young Serif";
+    color: hsl(14, 45%, 36%);
+    font-weight: 200;
+}
+
+.defaultHeadline.main {
+    font-family: "Young Serif";
+    color: hsl(24, 5%, 18%);
+}
+
+.defaultHeadline.pink {
+    color: hsl(332, 51%, 32%);
 }
 
 hr {
