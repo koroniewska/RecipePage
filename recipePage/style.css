@@ -16,7 +16,7 @@ body {
     border-radius: 20px;
 }
 
-.container img {
+.container img:nth-child(1) {
     border-radius: 10px;
     width: 100%;
 }
@@ -32,7 +32,6 @@ h1 {
     font-family: "Young Serif";
     color: hsl(24, 5%, 18%);
     font-weight: 200;
-
 }
 
 h2 {
@@ -47,20 +46,14 @@ h3 {
 }
 
 li {
-    margin: 10px;
-    padding-left: 10px;
-
+    padding: 10px 0 0 10px;
 }
 
-.liTotal::marker {
-    color: hsl(332, 51%, 32%);
+li:first-child {
+    padding-top: 0;
 }
 
-.liPrep::marker {
-    color: hsl(332, 51%, 32%);
-}
-
-.liCook::marker {
+.prepTime li::marker {
     color: hsl(332, 51%, 32%);
 }
 
@@ -71,28 +64,24 @@ li {
 }
 
 hr {
-    margin-top: 35px;
+    padding-top: 35px;
     border: none;
-    height: 1px;
-    color: hsl(30, 18%, 87%);
-    background-color: hsl(30, 18%, 87%);
-}
-
-table {
-    border-collapse: collapse;
-    width: 100%;
-}
-
-table td {
-    padding-top: 20px;
-    padding-bottom: 10px;
     border-bottom: 1px solid hsl(30, 18%, 87%);
 }
 
-.tableBorderBottomLeft {
- border-bottom: none;
+.defaultTable {
+    width: 100%;
+    border-collapse: collapse;
 }
 
-.tableBorderBottomRight {
-    border-bottom: none;
+.defaultTable tr:not(:last-child) {
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+.defaultTable td {
+    padding: 20px 0 10px 0;;
+}
+
+.defaultTable b {
+    color: hsl(14, 45%, 36%);
 }
